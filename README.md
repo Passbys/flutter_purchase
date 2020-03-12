@@ -18,14 +18,17 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Integration steps
 1、Add a reference to the main program pubspec.yaml file as follows:
-  flutterpurchase:
-    git:
+
+   flutterpurchase:
+     
+     git:
       url: 'https://github.com/Passbys/flutter_purchase.git'
       ref: 'v0.0.1'
       
 2、Add the following listeners needed to initialize the purchase in the main program (the following optional override methods):
 
- static setupPay(){
+ static setupPay(){   
+
     ///请求购买商品成功返回
     PaySettings.instance.onUpdatedPurchase = (context,productItem){
     
